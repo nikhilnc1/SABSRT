@@ -196,10 +196,6 @@
 
 @media(max-width:991px){
 
-    html{
-        overflow: hidden;
-    }
-
     .header{
         padding: 12px 0;
     }
@@ -361,8 +357,6 @@
 
 
 
-
-/* Add this new media query */
 @media (max-width: 609px) {
     html, body {
         max-width: 100%;
