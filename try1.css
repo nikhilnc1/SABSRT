@@ -50,7 +50,7 @@
     top: 0;
     width: 100%;
     z-index: 10;
-    background-color: #1a4b84;
+    background-color: #6482AD;
     padding: 10px;
 }
 
@@ -126,7 +126,7 @@
     left: 0;
     width: 230px;
     padding: 15px 0;
-    background-color: #245d9f;
+    background-color: #7FA1C3;
     box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
     z-index: 1;
     transform-origin: top;
@@ -196,10 +196,6 @@
 
 @media(max-width:991px){
 
-    html{
-        overflow: hidden;
-    }
-
     .header{
         padding: 12px 0;
     }
@@ -210,7 +206,7 @@
         top: 0;
         width: 320px;
         height: 100%;
-        background-color: #1a4b84;
+        background-color: #6482AD;
         padding: 15px 30px 30px;
         overflow-y: auto;
         z-index: 1;
@@ -360,38 +356,3 @@
 }
 
 
-
-
-/* Add this new media query */
-@media (max-width: 609px) {
-    html, body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    .container_1 {
-        padding: 0 10px;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .header {
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .header .container_1 {
-        justify-content: space-between; /* Change from space-evenly */
-    }
-
-    .header-right {
-        margin-right: 10px; /* Add some space from the right edge */
-    }
-
-    .header-right .open-menu-button {
-        position: static; /* Remove relative positioning */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
