@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    .about-section {
+        padding: 50px;
+        /* margin-top: 60px; */
+        /* Adjust this as needed to clear the header */
+    }
+
+    .about-section h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+
+    .about-section h3 {
+        margin-top: 20px;
+        color: #2980b9;
+    }
+
+    .about-section p {
+        margin-bottom: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-us {
+        padding-top: 30px;
+    }
+
+    .quote {
+        font-style: italic;
+        color: #16a085;
+        text-align: center;
+        margin: 20px 0;
+    }
+</style>
+<body>
+
+    <div>
+        <header class="header">
+            <div class="container_1">
+                <div class="logo d-flex align-items-center">
+                    <img src="../assets/IMG-20241007-WA0047-removebg.png" width="70px" alt="logo">
+                    <div class="logo-text ms-2">
+                        <h4 class="mb-0 kanit-bold text-white">SABSRT</h4>
+                        <p class="mb-0 kanit-regular text-white-50">Industries</p>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <div class="head">
+                        <div class="logo d-flex align-items-center">
+                            <img src="../assets/IMG-20241007-WA0047-removebg.png" width="50px" alt="logo">
+                            <div class="logo-text ms-2">
+                                <h4 class="mb-0 kanit-bold text-white">SABSRT</h4>
+                                <p class="mb-0 kanit-regular text-white-50">Industries</p>
+                            </div>
+                        </div>
+                        <button class="close-menu-btn"></button>
+                    </div>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="./product.html">Products</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <ul class="sub-menu">
+                                <li class="dropdown">
+                                    <a href="./tapes.html"><span>Tapes</span></a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="sub-menu sub-menu-right">
+                                        <li class="dropdown">
+                                            <a href="#"><span>Surface Protection Tape Embossed</span></a>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                            <ul class="sub-menu sub-menu-right">
+                                                <li><a href="#"><span>surface protection tape embossed</span></a></li>
+                                                <li><a href="#"><span>surface protection tape low Track/High
+                                                            Tack</span></a></li>
+                                                <li><a href="#"><span>Coated metal protection film</span></a></li>
+                                                <li><a href="#"><span>cling film</span></a></li>
+                                                <li><a href="#"><span>static film</span></a></li>
+                                                <li><a href="#"><span>cold LAMINATION FILM</span></a></li>
+                                                <li><a href="#"><span>SILICON COATED FILM</span></a></li>
+                                                <li><a href="#"><span>PVC FILM</span></a></li>
+                                                <li><a href="#"><span>EVA FILM</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><span>Masking Tapes</span></a></li>
+                                        <li><a href="#"><span>Foam Tapes</span></a></li>
+                                        <li><a href="#"><span>VHB Tapes</span></a></li>
+                                        <li><a href="#"><span>Duct Tapes</span></a></li>
+                                        <li><a href="#"><span>Filament Tape</span></a></li>
+                                        <li><a href="#"><span>Holding Tapes</span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#"><span>Floor Marking Tapes</span></a>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                            <ul class="sub-menu sub-menu-right">
+                                                <li><a href="#"><span>Zebra (Yellow, & Black)</span></a></li>
+                                                <li><a href="#"><span>coloured Floor Marking (Yellow, Red,
+                                                            Green)</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><span>PVC Insulation Tapes</span></a></li>
+                                        <li><a href="#"><span>BOPP Tapes</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="./gaskets.html"><span>Gaskets</span></a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="sub-menu sub-menu-right">
+                                        <li class="dropdown">
+                                            <a href="#"><span>Foam Gaskets</span></a>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                            <ul class="sub-menu sub-menu-right">
+                                                <li><a href="#"><span>Close Cell EPDM Gasket</span></a></li>
+                                                <li><a href="#"><span>Open Cell EPDM Gasket</span></a></li>
+                                                <li><a href="#"><span>EVA Foam Gasket</span></a></li>
+                                                <li><a href="#"><span>IXPE Foam Gasket</span></a></li>
+                                                <li><a href="#"><span>NBR Foam Gasket</span></a></li>
+                                                <li><a href="#"><span>PU Foam Gasket</span></a></li>
+                                                <li><a href="#"><span>Packing Buffers</span></a></li>
+                                                <li><a href="#"><span>Conductive Foam EMI, ESD Shielding
+                                                            Gasket</span></a></li>
+                                                <li><a href="#"><span>PSP Foam Gasket</span></a></li>
+                                                <li><a href="#"><span>Customise EPE Profiles</span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><span>Cork Gasket</span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#"><span>Cloth/Felt Gasket</span></a>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                            <ul class="sub-menu sub-menu-right">
+                                                <li><a href="#"><span>Cloth/Felt Gasket</span></a></li>
+                                                <li><a href="#"><span>Non-Oven Gasket</span></a></li>
+                                                <li><a href="#"><span>Novepress-850 Gasket</span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="./maskingdiecuts.html"><span>Masking Die Cuts</span></a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="sub-menu sub-menu-right">
+                                        <li><a href="#">Surface Protection Die Cuts</a></li>
+                                        <li><a href="#">Polyster Masking Die Cuts</a></li>
+                                        <li><a href="#">Aluminium Masking Die Cuts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="./insulationtubessleeve.html"><span>Insulation Tubes/Sleeve</span></a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="sub-menu sub-menu-right">
+                                        <li><a href="#">NBR Foam Tube</a></li>
+                                        <li><a href="#">UV Laminated Tubes</a></li>
+                                        <li><a href="#">XLC & AL Lamination</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="./labelstickers.html"><span>Label Stickers</span></a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="sub-menu sub-menu-right">
+                                        <li><a href="#">Vinyl sticker</a></li>
+                                        <li><a href="#">Die Cut Sticker</a></li>
+                                        <li><a href="#">Bumper Sticker</a></li>
+                                        <li><a href="#">Thermal sticker</a></li>
+                                        <li><a href="#">Barcode Sticker</a></li>
+                                        <li><a href="#">Foil Sticker</a></li>
+                                        <li><a href="#">Non-Tearable Sticker</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="./contactus.html">Contact us</a></li>
+                        <li><a href="./aboutus.html">About us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-right">
+                    <!-- Additional header elements can be added here -->
+                    <button type="button" class="open-menu-button icon-btn">
+                        <i class="fa-solid fa-bars text-white"></i></button>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Our Products</h2>
+
+        <div class="accordion" id="productAccordion">
+            <!-- Tapes Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tapes">
+                        Tapes
+                    </button>
+                </h2>
+                <div id="tapes" class="accordion-collapse collapse show" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <strong>1. Surface Protection Tape Embossed</strong>
+                                <ul class="list-unstyled ms-4">
+                                    <li>• Surface Protection Tape Embossed</li>
+                                    <li>• Surface Protection Tape Low Track/High Tack</li>
+                                    <li>• Coated Metal Protection Film</li>
+                                    <li>• Cling Film</li>
+                                    <li>• Static Film</li>
+                                    <li>• Cold Lamination Film</li>
+                                    <li>• Silicon Coated Film</li>
+                                    <li>• PVC Film</li>
+                                    <li>• EVA Film</li>
+                                </ul>
+                            </li>
+                            <li>2. Masking Tapes</li>
+                            <li>3. Foam Tapes</li>
+                            <li>4. VHB Tapes</li>
+                            <li>5. Aluminum Tapes</li>
+                            <li>6. Duct Tapes</li>
+                            <li>7. Filament Tape</li>
+                            <li>8. Holding Tapes</li>
+                            <li>9. PVC Insulation Tapes</li>
+                            <li>10. BOPP Tapes</li>
+                            <li class="mb-3">
+                                <strong>11. Floor Marking Tapes</strong>
+                                <ul class="list-unstyled ms-4">
+                                    <li>• Zebra (Yellow & Black)</li>
+                                    <li>• Colored Floor Marking (Yellow, Red, Green)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaskets Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#gaskets">
+                        Gaskets
+                    </button>
+                </h2>
+                <div id="gaskets" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        <div class="mb-3">
+                            <strong>Foam Gaskets:</strong>
+                            <ul class="list-unstyled ms-4">
+                                <li>1. Close Cell EPDM Gasket</li>
+                                <li>2. Open Cell EPDM Gasket</li>
+                                <li>3. EVA Foam Gasket</li>
+                                <li>4. IXPE Foam Gasket</li>
+                                <li>5. NBR Foam Gasket</li>
+                                <li>6. PU Foam Gasket</li>
+                                <li>7. Packing Buffers</li>
+                                <li>8. Conductive Foam EMI, ESD Shielding Gasket</li>
+                                <li>9. PSP Foam Gasket</li>
+                                <li>10. Customise EPE Profiles</li>
+                            </ul>
+                        </div>
+                        <div class="mb-3">
+                            <strong>Cork Gasket</strong>
+                        </div>
+                        <div>
+                            <strong>Cloth/Felt Gasket:</strong>
+                            <ul class="list-unstyled ms-4">
+                                <li>1. Cloth/Felt Gasket</li>
+                                <li>2. Non-Oven Gasket</li>
+                                <li>3. Novepress-850 Gasket</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Masking Die Cuts Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#dieCuts">
+                        Masking Die Cuts
+                    </button>
+                </h2>
+                <div id="dieCuts" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li>1. Surface Protection Die Cuts</li>
+                            <li>2. Polyster Masking Die Cuts</li>
+                            <li>3. Aluminium Masking Die Cuts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Insulation Tubes/Sleeve Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#tubes">
+                        Insulation Tubes/Sleeve
+                    </button>
+                </h2>
+                <div id="tubes" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li>1. NBR Foam Tube</li>
+                            <li>2. UV Laminated Tubes</li>
+                            <li>3. XLC & AL Lamination</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Label Stickers Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#stickers">
+                        Label Stickers
+                    </button>
+                </h2>
+                <div id="stickers" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li>1. Vinyl Sticker</li>
+                            <li>2. Die Cut Sticker</li>
+                            <li>3. Bumper Sticker</li>
+                            <li>4. Thermal Sticker</li>
+                            <li>5. Barcode Sticker</li>
+                            <li>6. Foil Sticker</li>
+                            <li>7. Non-Tearable Sticker</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <!-- Contact Information -->
+                <div class="col-md-6">
+                    <h4 class="mb-3 text-primary">Contact Us</h4>
+                    <h5 class="mb-3 text-warning">SABSRT Industries LLP</h5>
+                    <div class="contact-details">
+                        <p class="mb-2">
+                            <i class="fas fa-phone-alt me-2 text-primary"></i>
+                            <strong>Business Enquiries:</strong><br>
+                            <span class="ms-4">+91-9665099348, 8208277315, 02402992273</span>
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            <strong>Email:</strong><br>
+                            <span class="ms-4">rohit.sabsrt@gmail.com</span><br>
+                            <span class="ms-4">sales.sabsrt@gmail.com</span>
+                        </p>
+                        <p class="mb-0">
+                            <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                            <strong>Office:</strong><br>
+                            <span class="ms-4">Plot no: 02, Gut No- 70, Vadgaon Kolati,<br>
+                            <span class="ms-4">MIDC Waluj, Sambhajinagar - 431136</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Map -->
+                <div class="col-md-6">
+                    <div class="card border-0 bg-dark text-light p-4" style="border-radius: 10px; box-shadow: 0 0 15px rgba(255,255,255,0.1);">
+                        <h5 class="card-title mb-3">Send us a Message</h5>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
