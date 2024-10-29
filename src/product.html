@@ -56,6 +56,34 @@
         text-align: center;
         margin: 20px 0;
     }
+
+    .card-img-top {
+        height: 200px;
+        object-fit: contain;
+        padding: 15px;
+        background: #f8f9fa;
+    }
+
+    .card {
+        transition: transform 0.2s;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .btn-primary {
+        background-color: #1a4b84;
+        border: none;
+        padding: 8px 20px;
+    }
+
+    .btn-primary:hover {
+        background-color: #123456;
+    }
 </style>
 <body>
 
@@ -209,145 +237,58 @@
     <div class="container mt-5">
         <h2 class="text-center mb-4">Our Products</h2>
 
-        <div class="accordion" id="productAccordion">
-            <!-- Tapes Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tapes">
-                        Tapes
-                    </button>
-                </h2>
-                <div id="tapes" class="accordion-collapse collapse show" data-bs-parent="#productAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-unstyled">
-                            <li class="mb-3">
-                                <strong>1. Surface Protection Tape Embossed</strong>
-                                <ul class="list-unstyled ms-4">
-                                    <li>• Surface Protection Tape Embossed</li>
-                                    <li>• Surface Protection Tape Low Track/High Tack</li>
-                                    <li>• Coated Metal Protection Film</li>
-                                    <li>• Cling Film</li>
-                                    <li>• Static Film</li>
-                                    <li>• Cold Lamination Film</li>
-                                    <li>• Silicon Coated Film</li>
-                                    <li>• PVC Film</li>
-                                    <li>• EVA Film</li>
-                                </ul>
-                            </li>
-                            <li>2. Masking Tapes</li>
-                            <li>3. Foam Tapes</li>
-                            <li>4. VHB Tapes</li>
-                            <li>5. Aluminum Tapes</li>
-                            <li>6. Duct Tapes</li>
-                            <li>7. Filament Tape</li>
-                            <li>8. Holding Tapes</li>
-                            <li>9. PVC Insulation Tapes</li>
-                            <li>10. BOPP Tapes</li>
-                            <li class="mb-3">
-                                <strong>11. Floor Marking Tapes</strong>
-                                <ul class="list-unstyled ms-4">
-                                    <li>• Zebra (Yellow & Black)</li>
-                                    <li>• Colored Floor Marking (Yellow, Red, Green)</li>
-                                </ul>
-                            </li>
-                        </ul>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Tapes -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/tapes/Masking Tapes.jfif" class="card-img-top" alt="Tapes">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tapes</h5>
+                        <a href="./tapes.html" class="btn btn-primary mt-2">View Products</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Gaskets Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gaskets">
-                        Gaskets
-                    </button>
-                </h2>
-                <div id="gaskets" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
-                    <div class="accordion-body">
-                        <div class="mb-3">
-                            <strong>Foam Gaskets:</strong>
-                            <ul class="list-unstyled ms-4">
-                                <li>1. Close Cell EPDM Gasket</li>
-                                <li>2. Open Cell EPDM Gasket</li>
-                                <li>3. EVA Foam Gasket</li>
-                                <li>4. IXPE Foam Gasket</li>
-                                <li>5. NBR Foam Gasket</li>
-                                <li>6. PU Foam Gasket</li>
-                                <li>7. Packing Buffers</li>
-                                <li>8. Conductive Foam EMI, ESD Shielding Gasket</li>
-                                <li>9. PSP Foam Gasket</li>
-                                <li>10. Customise EPE Profiles</li>
-                            </ul>
-                        </div>
-                        <div class="mb-3">
-                            <strong>Cork Gasket</strong>
-                        </div>
-                        <div>
-                            <strong>Cloth/Felt Gasket:</strong>
-                            <ul class="list-unstyled ms-4">
-                                <li>1. Cloth/Felt Gasket</li>
-                                <li>2. Non-Oven Gasket</li>
-                                <li>3. Novepress-850 Gasket</li>
-                            </ul>
-                        </div>
+            <!-- Gaskets -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Close Cell EPDM Gasket.jfif" class="card-img-top" alt="Gaskets">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gaskets</h5>
+                        <a href="./gaskets.html" class="btn btn-primary mt-2">View Products</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Masking Die Cuts Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dieCuts">
-                        Masking Die Cuts
-                    </button>
-                </h2>
-                <div id="dieCuts" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-unstyled">
-                            <li>1. Surface Protection Die Cuts</li>
-                            <li>2. Polyster Masking Die Cuts</li>
-                            <li>3. Aluminium Masking Die Cuts</li>
-                        </ul>
+            <!-- Masking Die Cuts -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/die-cuts/Polyester.jfif" class="card-img-top" alt="Masking Die Cuts">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Masking Die Cuts</h5>
+                        <a href="./maskingdiecuts.html" class="btn btn-primary mt-2">View Products</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Insulation Tubes/Sleeve Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tubes">
-                        Insulation Tubes/Sleeve
-                    </button>
-                </h2>
-                <div id="tubes" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-unstyled">
-                            <li>1. NBR Foam Tube</li>
-                            <li>2. UV Laminated Tubes</li>
-                            <li>3. XLC & AL Lamination</li>
-                        </ul>
+            <!-- Insulation Tubes/Sleeve -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/tubes-sleeve/NBR Foam tubes.jfif" class="card-img-top" alt="Insulation Tubes/Sleeve">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Insulation Tubes/Sleeve</h5>
+                        <a href="./insulationtubessleeve.html" class="btn btn-primary mt-2">View Products</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Label Stickers Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stickers">
-                        Label Stickers
-                    </button>
-                </h2>
-                <div id="stickers" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
-                    <div class="accordion-body">
-                        <ul class="list-unstyled">
-                            <li>1. Vinyl Sticker</li>
-                            <li>2. Die Cut Sticker</li>
-                            <li>3. Bumper Sticker</li>
-                            <li>4. Thermal Sticker</li>
-                            <li>5. Barcode Sticker</li>
-                            <li>6. Foil Sticker</li>
-                            <li>7. Non-Tearable Sticker</li>
-                        </ul>
+            <!-- Label Stickers -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Vinyl stickers.jfif" class="card-img-top" alt="Label Stickers">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Label Stickers</h5>
+                        <a href="./labelstickers.html" class="btn btn-primary mt-2">View Products</a>
                     </div>
                 </div>
             </div>

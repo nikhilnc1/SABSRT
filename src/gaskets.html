@@ -25,8 +25,6 @@
 
     .about-section {
         padding: 50px;
-        /* margin-top: 60px; */
-        /* Adjust this as needed to clear the header */
     }
 
     .about-section h1 {
@@ -55,6 +53,30 @@
         color: #16a085;
         text-align: center;
         margin: 20px 0;
+    }
+
+    .card-img-top {
+        height: 150px;          /* Fixed height */
+        object-fit: contain;    /* Maintains aspect ratio */
+        padding: 10px;         /* Adds some spacing inside the card */
+        background: #f8f9fa;   /* Light background for images */
+    }
+
+    .card {
+        transition: transform 0.2s;  /* Smooth hover effect */
+    }
+
+    .card:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow on hover */
+    }
+
+    .text-primary {
+        color: #0066FF !important;  /* Bright blue color from the image */
+    }
+
+    .text-secondary {
+        color: #666666 !important;  /* Gray color from the image */
     }
 </style>
 
@@ -209,78 +231,143 @@
     <div style="margin-top: 50px;"></div>
 
     <div class="container mt-5 py-5">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-6">
-                <img src="./assets/1583458051840_11zon.jpg" alt="Gaskets Products"
-                    class="img-fluid rounded shadow-sm mb-4">
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-primary mb-4">Our Gaskets Collection</h2>
-                <div class="card border-0 shadow-sm">
+        <h2 class="text-center mb-5" style="color: #0066FF;">Our Gaskets Collection</h2>
+        
+        <!-- Foam Gaskets Section -->
+        <h3 class="mb-4" style="color: #666666;">Foam Gaskets</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Close Cell EPDM Gasket.jfif" class="card-img-top" alt="Close Cell EPDM Gasket">
                     <div class="card-body">
-                        <div class="accordion" id="gasketsAccordion">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#foamGaskets">
-                                        Foam Gaskets
-                                    </button>
-                                </h3>
-                                <div id="foamGaskets" class="accordion-collapse collapse show"
-                                    data-bs-parent="#gasketsAccordion">
-                                    <div class="accordion-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">• Close Cell EPDM Gasket</li>
-                                            <li class="list-group-item">• Open Cell EPDM Gasket</li>
-                                            <li class="list-group-item">• EVA Foam Gasket</li>
-                                            <li class="list-group-item">• IXPE Foam Gasket</li>
-                                            <li class="list-group-item">• NBR Foam Gasket</li>
-                                            <li class="list-group-item">• PU Foam Gasket</li>
-                                            <li class="list-group-item">• Packing Buffers</li>
-                                            <li class="list-group-item">• Conductive Foam EMI, ESD Shielding Gasket</li>
-                                            <li class="list-group-item">• PSP Foam Gasket</li>
-                                            <li class="list-group-item">• Customise EPE Profiles</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                        <h5 class="card-title">Close Cell EPDM Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Open Cell EPDM Gasket.jfif" class="card-img-top" alt="Open Cell EPDM Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">Open Cell EPDM Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/EVA Foam Gasket.jfif" class="card-img-top" alt="EVA Foam Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">EVA Foam Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/IXPE Foam Gasket.jfif" class="card-img-top" alt="IXPE Foam Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">IXPE Foam Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/NBR Foam Gasket.jfif" class="card-img-top" alt="NBR Foam Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">NBR Foam Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/PU Foam Gasket.jfif" class="card-img-top" alt="PU Foam Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">PU Foam Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Packing buffers.jfif" class="card-img-top" alt="Packing Buffers">
+                    <div class="card-body">
+                        <h5 class="card-title">Packing Buffers</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Conductive Foam EMI, ESD Shielding Gasket.jfif" class="card-img-top" alt="Conductive Foam EMI">
+                    <div class="card-body">
+                        <h5 class="card-title">Conductive Foam EMI, ESD Shielding Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/psp foam gasket.jfif" class="card-img-top" alt="PSP Foam Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">PSP Foam Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Customise EPE Profiles.jfif" class="card-img-top" alt="Customise EPE Profiles">
+                    <div class="card-body">
+                        <h5 class="card-title">Customise EPE Profiles</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#corkGaskets">
-                                        Cork Gasket
-                                    </button>
-                                </h3>
-                                <div id="corkGaskets" class="accordion-collapse collapse"
-                                    data-bs-parent="#gasketsAccordion">
-                                    <div class="accordion-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">• Cork Gasket Products</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+        <!-- Cork Gasket Section -->
+        <h3 class="text-secondary mb-4">Cork Gasket</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Cork Gasket.jfif" class="card-img-top" alt="Cork Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">Cork Gasket</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#clothFelt">
-                                        Cloth/Felt Gasket
-                                    </button>
-                                </h3>
-                                <div id="clothFelt" class="accordion-collapse collapse"
-                                    data-bs-parent="#gasketsAccordion">
-                                    <div class="accordion-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">• Cloth/Felt Gasket</li>
-                                            <li class="list-group-item">• Non-Oven Gasket</li>
-                                            <li class="list-group-item">• Novepress-850 Gasket</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Cloth/Felt Gasket Section -->
+        <h3 class="text-secondary mb-4">Cloth/Felt Gasket</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/ClothFelt Gasket.jfif" class="card-img-top" alt="Cloth/Felt Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloth/Felt Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Non-Oven Gasket.jfif" class="card-img-top" alt="Non-Oven Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">Non-Oven Gasket</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Novepress-850 Gasket.jfif" class="card-img-top" alt="Novepress-850 Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">Novepress-850 Gasket</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rubber Gaskets Section -->
+        <h3 class="text-secondary mb-4">Rubber Gaskets</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/gaskets/Rubber Gasket.jfif" class="card-img-top" alt="Rubber Gasket">
+                    <div class="card-body">
+                        <h5 class="card-title">Rubber Gasket</h5>
                     </div>
                 </div>
             </div>

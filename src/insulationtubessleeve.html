@@ -25,8 +25,6 @@
 
     .about-section {
         padding: 50px;
-        /* margin-top: 60px; */
-        /* Adjust this as needed to clear the header */
     }
 
     .about-section h1 {
@@ -55,6 +53,30 @@
         color: #16a085;
         text-align: center;
         margin: 20px 0;
+    }
+
+    .card-img-top {
+        height: 150px;          /* Fixed height */
+        object-fit: contain;    /* Maintains aspect ratio */
+        padding: 10px;         /* Adds some spacing inside the card */
+        background: #f8f9fa;   /* Light background for images */
+    }
+
+    .card {
+        transition: transform 0.2s;  /* Smooth hover effect */
+    }
+
+    .card:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow on hover */
+    }
+
+    .text-primary {
+        color: #0066FF !important;  /* Bright blue color from the image */
+    }
+
+    .text-secondary {
+        color: #666666 !important;  /* Gray color from the image */
     }
 </style>
 
@@ -206,39 +228,35 @@
         </header>
     </div>
 
-    <div style="margin-top: 120px;"></div>
+    <div style="margin-top: 50px;"></div>
 
     <div class="container mt-5 py-5">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-6">
-                <img src="./assets/1583458051840_11zon.jpg" alt="Insulation Tubes Products"
-                    class="img-fluid rounded shadow-sm mb-4">
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-primary mb-4">Our Insulation Tubes/Sleeve Collection</h2>
-                <div class="card border-0 shadow-sm">
+        <h2 class="text-primary text-center mb-5">Our Insulation Tubes/Sleeve Collection</h2>
+        
+        <!-- Insulation Tubes Section -->
+        <h3 class="text-secondary mb-4">Insulation Tubes/Sleeve Products</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/tubes-sleeve/NBR Foam tubes.jfif" class="card-img-top" alt="NBR Foam Tube">
                     <div class="card-body">
-                        <div class="accordion" id="insulationAccordion">
-                            <!-- Insulation Tubes -->
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#insulationTubes">
-                                        Insulation Tubes/Sleeve Products
-                                    </button>
-                                </h3>
-                                <div id="insulationTubes" class="accordion-collapse collapse show"
-                                    data-bs-parent="#insulationAccordion">
-                                    <div class="accordion-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">• NBR Foam Tube</li>
-                                            <li class="list-group-item">• UV Laminated Tubes</li>
-                                            <li class="list-group-item">• XLC & AL Lamination</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h5 class="card-title">NBR Foam Tube</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/tubes-sleeve/UV Lamination Tubes.jfif" class="card-img-top" alt="UV Laminated Tubes">
+                    <div class="card-body">
+                        <h5 class="card-title">UV Laminated Tubes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/tubes-sleeve/XLC and Al lamination tube.jfif" class="card-img-top" alt="XLC & AL Lamination">
+                    <div class="card-body">
+                        <h5 class="card-title">XLC & AL Lamination</h5>
                     </div>
                 </div>
             </div>

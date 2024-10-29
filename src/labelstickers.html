@@ -56,6 +56,22 @@
         text-align: center;
         margin: 20px 0;
     }
+
+    .card-img-top {
+        height: 150px;          /* Fixed height */
+        object-fit: contain;    /* Maintains aspect ratio */
+        padding: 10px;         /* Adds some spacing inside the card */
+        background: #f8f9fa;   /* Light background for images */
+    }
+
+    .card {
+        transition: transform 0.2s;  /* Smooth hover effect */
+    }
+
+    .card:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow on hover */
+    }
 </style>
 
 <body>
@@ -206,43 +222,67 @@
         </header>
     </div>
 
-    <div style="margin-top: 120px;"></div>
+    <div style="margin-top: 50px;"></div>
 
     <div class="container mt-5 py-5">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-md-6">
-                <img src="./assets/1583458051840_11zon.jpg" alt="Label Stickers Products"
-                    class="img-fluid rounded shadow-sm mb-4">
-            </div>
-            <div class="col-md-6">
-                <h2 class="text-primary mb-4">Our Label Stickers Collection</h2>
-                <div class="card border-0 shadow-sm">
+        <h2 class="text-primary text-center mb-5">Our Label Stickers Collection</h2>
+        
+        <!-- Label Stickers Section -->
+        <h3 class="text-secondary mb-4">Label Stickers</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Vinyl stickers.jfif" class="card-img-top" alt="Vinyl Sticker">
                     <div class="card-body">
-                        <div class="accordion" id="labelStickersAccordion">
-                            <!-- Label Stickers -->
-                            <div class="accordion-item">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#labelStickers">
-                                        Label Stickers Products
-                                    </button>
-                                </h3>
-                                <div id="labelStickers" class="accordion-collapse collapse show"
-                                    data-bs-parent="#labelStickersAccordion">
-                                    <div class="accordion-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">• Vinyl sticker</li>
-                                            <li class="list-group-item">• Die Cut Sticker</li>
-                                            <li class="list-group-item">• Bumper Sticker</li>
-                                            <li class="list-group-item">• Thermal sticker</li>
-                                            <li class="list-group-item">• Barcode Sticker</li>
-                                            <li class="list-group-item">• Foil Sticker</li>
-                                            <li class="list-group-item">• Non-Tearable Sticker</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h5 class="card-title">Vinyl Sticker</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Die cut sticker.jfif" class="card-img-top" alt="Die Cut Sticker">
+                    <div class="card-body">
+                        <h5 class="card-title">Die Cut Sticker</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Bumper sticker.jfif" class="card-img-top" alt="Bumper Sticker">
+                    <div class="card-body">
+                        <h5 class="card-title">Bumper Sticker</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Thermal sticker.jfif" class="card-img-top" alt="Thermal Sticker">
+                    <div class="card-body">
+                        <h5 class="card-title">Thermal Sticker</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Barcode sticker.jfif" class="card-img-top" alt="Barcode Sticker">
+                    <div class="card-body">
+                        <h5 class="card-title">Barcode Sticker</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Foil sticker.jfif" class="card-img-top" alt="Foil Sticker">
+                    <div class="card-body">
+                        <h5 class="card-title">Foil Sticker</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/stickers/Non tearable sticker.jfif" class="card-img-top" alt="Non-Tearable Sticker">
+                    <div class="card-body">
+                        <h5 class="card-title">Non-Tearable Sticker</h5>
                     </div>
                 </div>
             </div>
