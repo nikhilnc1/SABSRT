@@ -82,6 +82,82 @@
         transform: translateY(-5px);
         transition: transform 0.3s ease;
     }
+
+    .slideshow-background {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .slideshow-background .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        animation: fadeInOut 15s infinite;
+        opacity: 0;
+    }
+
+    .slideshow-background .slide:nth-child(1) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/1583458051840_11zon.jpg');
+        animation-delay: 0s;
+    }
+
+    .slideshow-background .slide:nth-child(2) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/index-2.jpeg');
+        animation-delay: 5s;
+    }
+
+    .slideshow-background .slide:nth-child(3) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/index-3.jpeg');
+        animation-delay: 10s;
+    }
+
+    @keyframes fadeInOut {
+        0%, 45%, 100% { opacity: 0; }
+        15%, 30% { opacity: 1; }
+    }
+
+    .content-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        padding: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .slideshow-background {
+            height: 100vh;
+        }
+        
+        .hero-content h1 {
+            font-size: 2rem;
+        }
+        
+        .hero-content .lead {
+            font-size: 1rem;
+        }
+    }
 </style>
 
 <body>
@@ -237,48 +313,30 @@
         </header>
     </div>
 
-    <div class="container-fluid p-0">
-        <div class="position-relative">
-            <!-- Background image with overlay -->
-            <div class="hero-section" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/1583458051840_11zon.jpg'); 
-                        background-size: cover;
-                        background-position: center;
-                        min-height: 100vh;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 20px;">
-
-                <!-- Text content -->
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-10">
-                            <div class="text-center text-white p-4 hero-content" style="background: rgba(0, 0, 0, 0.5); 
-                                        border-radius: 15px;
-                                        backdrop-filter: blur(10px);
-                                        border: 1px solid rgba(255, 255, 255, 0.1);">
-                                <h1 class="display-4 mb-2 kanit-bold animate-text">Welcome to SABSRT Industries</h1>
-                                <p class="lead kanit-regular mb-2" style="line-height: 1.8;">
-                                    At SABSRT Industries, we specialize in engineered foams, tapes, masking solutions,
-                                    gaskets, surface protection films, and acoustic products. Established in 2022, we
-                                    are committed to delivering innovative, high-quality materials tailored to meet
-                                    diverse industry needs.
-                                </p>
-                                <p class="lead kanit-regular mb-4 d-none d-md-block" style="line-height: 1.8;">
-                                    Our state-of-the-art facility ensures reliable, cost-effective solutions, with a
-                                    focus on research, custom-engineered products, and strong partnerships. Explore our
-                                    wide range of tapes, gaskets, and protection films designed to drive your success.
-                                </p>
-                                <p class="h4 mt-4 mb-2 kanit-medium fst-italic text-warning">
-                                    "Quality You Can Trust, Under One Roof."
-                                </p>
-                                <div class="mt-3">
-                                    <a href="./product.html" class="btn btn-warning btn-lg me-3 mb-3 kanit-medium">
-                                        Explore Products
-                                    </a>
-
-                                </div>
-                            </div>
+    <div class="slideshow-background">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        
+        <div class="content-overlay">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-10">
+                        <div class="text-center text-white p-4 hero-content" style="background: rgba(0, 0, 0, 0.3);
+                                    border-radius: 15px;
+                                    backdrop-filter: blur(5px);
+                                    border: 1px solid rgba(255, 255, 255, 0.2);">
+                            <h1 class="display-4 mb-2 kanit-bold animate-text" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Welcome to SABSRT Industries</h1>
+                            <p class="lead kanit-regular mb-2" style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                At SABSRT Industries, we specialize in engineered foams, tapes, masking solutions, gaskets, surface protection films, and acoustic products. Established in 2022, we are committed to delivering innovative, high-quality materials tailored to meet diverse industry needs.
+                            </p>
+                            <p class="lead kanit-regular mb-3" style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                Our state-of-the-art facility ensures reliable, cost-effective solutions, with a focus on research, custom-engineered products, and strong partnerships. Explore our wide range of tapes, gaskets, and protection films designed to drive your success.
+                            </p>
+                            <p class="lead kanit-regular mb-4 text-warning" style="font-style: italic;">
+                                "Quality You Can Trust, Under One Roof."
+                            </p>
+                            <a href="#products" class="btn btn-warning btn-lg">Explore Products</a>
                         </div>
                     </div>
                 </div>
