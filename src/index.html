@@ -17,13 +17,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <style>
     body {
         font-family: 'Arial', sans-serif;
         line-height: 1.6;
         color: #333;
+        /* background: linear-gradient(135deg, #1e2a3a 0%, #2c3e50 100%); */
     }
 
     .about-section {
@@ -67,9 +70,12 @@
     }
 
     .industry-card .card-img-top {
-        background-color: #f8f9fa; /* Light grey background */
-        padding: 10px; /* Add some padding around the image */
-        object-fit: contain !important; /* Changed from cover to contain */
+        background-color: #f8f9fa;
+        /* Light grey background */
+        padding: 10px;
+        /* Add some padding around the image */
+        object-fit: contain !important;
+        /* Changed from cover to contain */
     }
 
     .industry-slider .row {
@@ -88,7 +94,8 @@
     /* Tablet view */
     @media (max-width: 992px) {
         .industry-card {
-            flex: 0 0 calc(33.333% - 20px);  /* 3 items per row */
+            flex: 0 0 calc(33.333% - 20px);
+            /* 3 items per row */
             max-width: calc(33.333% - 20px);
         }
     }
@@ -96,7 +103,8 @@
     /* Mobile view */
     @media (max-width: 768px) {
         .industry-card {
-            flex: 0 0 calc(50% - 20px);  /* 2 items per row */
+            flex: 0 0 calc(50% - 20px);
+            /* 2 items per row */
             max-width: calc(50% - 20px);
         }
     }
@@ -104,7 +112,8 @@
     /* Small mobile view */
     @media (max-width: 480px) {
         .industry-card {
-            flex: 0 0 100%;  /* 1 item per row */
+            flex: 0 0 100%;
+            /* 1 item per row */
             max-width: 100%;
         }
     }
@@ -149,8 +158,17 @@
     }
 
     @keyframes fadeInOut {
-        0%, 45%, 100% { opacity: 0; }
-        15%, 30% { opacity: 1; }
+
+        0%,
+        45%,
+        100% {
+            opacity: 0;
+        }
+
+        15%,
+        30% {
+            opacity: 1;
+        }
     }
 
     .content-overlay {
@@ -180,11 +198,11 @@
         .slideshow-background {
             height: 100vh;
         }
-        
+
         .hero-content h1.display-4 {
             font-size: 2.5rem;
         }
-        
+
         .hero-content .lead {
             font-size: 1.15rem;
         }
@@ -264,6 +282,7 @@
                                         </li>
                                         <li><a href="./tapes.html"><span>PVC Insulation Tapes</span></a></li>
                                         <li><a href="./tapes.html"><span>BOPP Tapes</span></a></li>
+                                        <li><a href="./tapes.html"><span>Food Grade PVC Tapes</span></a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -354,7 +373,7 @@
         <div class="slide"></div>
         <div class="slide"></div>
         <div class="slide"></div>
-        
+
         <div class="content-overlay">
             <div class="container">
                 <div class="row justify-content-center">
@@ -363,14 +382,23 @@
                                     border-radius: 15px;
                                     backdrop-filter: blur(5px);
                                     border: 1px solid rgba(255, 255, 255, 0.2);">
-                            <h1 class="display-4 mb-2 kanit-bold animate-text" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Welcome to SABSRT Industries</h1>
-                            <p class="lead kanit-regular mb-2" style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
-                                At SABSRT Industries, we specialize in engineered foams, tapes, masking solutions, gaskets, surface protection films, and acoustic products. Established in 2022, we are committed to delivering innovative, high-quality materials tailored to meet diverse industry needs.
+                            <h1 class="display-4 mb-2 kanit-bold animate-text"
+                                style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Welcome to SABSRT Industries</h1>
+                            <p class="lead kanit-regular mb-2"
+                                style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                At SABSRT Industries, we specialize in engineered foams, tapes, masking solutions,
+                                gaskets, surface protection films, and acoustic products. Established in 2022, we are
+                                committed to delivering innovative, high-quality materials tailored to meet diverse
+                                industry needs.
                             </p>
-                            <p class="lead kanit-regular mb-3 hide-small" style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
-                                Our state-of-the-art facility ensures reliable, cost-effective solutions, with a focus on research, custom-engineered products, and strong partnerships. Explore our wide range of tapes, gaskets, and protection films designed to drive your success.
+                            <p class="lead kanit-regular mb-3 hide-small"
+                                style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                                Our state-of-the-art facility ensures reliable, cost-effective solutions, with a focus
+                                on research, custom-engineered products, and strong partnerships. Explore our wide range
+                                of tapes, gaskets, and protection films designed to drive your success.
                             </p>
-                            <p class="lead kanit-regular mb-4 text-warning" style="font-style: italic; font-size: 1.4rem;">
+                            <p class="lead kanit-regular mb-4 text-warning"
+                                style="font-style: italic; font-size: 1.4rem;">
                                 "Quality You Can Trust, Under One Roof."
                             </p>
                             <a href="#products" class="btn btn-warning btn-lg">Explore Products</a>
@@ -479,6 +507,54 @@
         </div>
     </div>
 
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4 kanit-bold">Our Impact</h2>
+        <div class="row justify-content-center">
+            <!-- Customer Count -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h4 class="card-title kanit-medium">Happy Customers</h4>
+                        <div class="counter-wrapper">
+                            <span class="counter display-4 kanit-bold text-primary" data-target="52">0</span>
+                            <span class="display-4 kanit-bold text-primary">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Range -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-box-open fa-3x mb-3 text-success"></i>
+                        <h4 class="card-title kanit-medium">Product Range</h4>
+                        <div class="counter-wrapper">
+                            <span class="counter display-4 kanit-bold text-success" data-target="186">0</span>
+                            <span class="display-4 kanit-bold text-success">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recognition -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <i class="fas fa-trophy fa-3x mb-3 text-warning"></i>
+                        <h4 class="card-title kanit-medium">Recognition</h4>
+                        <div class="counter-wrapper">
+                            <span class="counter display-4 kanit-bold text-warning" data-target="14">0</span>
+                            <span class="display-4 kanit-bold text-warning">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 
@@ -491,8 +567,9 @@
             <div class="row">
                 <!-- Automotive -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/automotive.jpg" class="card-img-top"
                                 alt="Automotive Industry" style="height: 180px; object-fit: contain;">
                         </div>
@@ -501,26 +578,29 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Electrical -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <img src="./assets/industryweserve/electrical.jpg" class="card-img-top"
-                                alt="Electrical Industry" style="height: 180px; object-fit: contain;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/goods.jpg" class="card-img-top"
+                                alt="White Goods Industry" style="height: 180px; object-fit: contain;">
                         </div>
                         <div class="card-body text-center bg-secondary text-white">
-                            <h5 class="card-title mb-0 kanit-medium">ELECTRIC/ELECTRICAL INDUSTRY</h5>
+                            <h5 class="card-title mb-0 kanit-medium">WHITE GOODS INDUSTRY</h5>
                         </div>
                     </div>
                 </div>
 
+                <!-- Electrical -->
+
+
                 <!-- HVAC -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <img src="./assets/industryweserve/hvac.jpg" class="card-img-top"
-                                alt="HVAC Industry" style="height: 180px; object-fit: contain;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/hvac.jpg" class="card-img-top" alt="HVAC Industry"
+                                style="height: 180px; object-fit: contain;">
                         </div>
                         <div class="card-body text-center bg-danger text-white">
                             <h5 class="card-title mb-0 kanit-medium">HVAC INDUSTRY</h5>
@@ -530,10 +610,11 @@
 
                 <!-- Label -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <img src="./assets/industryweserve/label.jpg" class="card-img-top"
-                                alt="Label Industry" style="height: 180px; object-fit: contain;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/label.jpg" class="card-img-top" alt="Label Industry"
+                                style="height: 180px; object-fit: contain;">
                         </div>
                         <div class="card-body text-center bg-secondary text-white">
                             <h5 class="card-title mb-0 kanit-medium">LABEL INDUSTRY</h5>
@@ -543,8 +624,9 @@
 
                 <!-- Packaging -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/packaging.jpg" class="card-img-top"
                                 alt="Packaging Industry" style="height: 180px; object-fit: contain;">
                         </div>
@@ -556,8 +638,9 @@
 
                 <!-- Paper Mills -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/paper.jpg" class="card-img-top"
                                 alt="Paper Mills Industry" style="height: 180px; object-fit: contain;">
                         </div>
@@ -569,10 +652,11 @@
 
                 <!-- Signage -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <img src="./assets/industryweserve/signage.jpg" class="card-img-top"
-                                alt="Signage Industry" style="height: 180px; object-fit: contain;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/signage.jpg" class="card-img-top" alt="Signage Industry"
+                                style="height: 180px; object-fit: contain;">
                         </div>
                         <div class="card-body text-center bg-danger text-white">
                             <h5 class="card-title mb-0 kanit-medium">SIGNAGE INDUSTRY</h5>
@@ -582,8 +666,9 @@
 
                 <!-- Surface Protection -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/surface.jpg" class="card-img-top"
                                 alt="Surface Protection Industry" style="height: 180px; object-fit: contain;">
                         </div>
@@ -595,8 +680,9 @@
 
                 <!-- Wire Harness -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/wireharness.jpg" class="card-img-top"
                                 alt="Wire Harness Industry" style="height: 180px; object-fit: contain;">
                         </div>
@@ -607,13 +693,14 @@
                 </div>
                 <!-- White Goods -->
                 <div class="industry-card">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
-                            <img src="./assets/industryweserve/goods.jpg" class="card-img-top"
-                                alt="White Goods Industry" style="height: 180px; object-fit: contain;">
+                    <div class="card h-100 border-0 shadow-sm" style="border-radius: 5px; overflow: hidden;">
+                        <div
+                            style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/electrical.jpg" class="card-img-top"
+                                alt="Electrical Industry" style="height: 180px; object-fit: contain;">
                         </div>
                         <div class="card-body text-center bg-secondary text-white">
-                            <h5 class="card-title mb-0 kanit-medium">WHITE GOODS INDUSTRY</h5>
+                            <h5 class="card-title mb-0 kanit-medium">ELECTRIC/ELECTRICAL INDUSTRY</h5>
                         </div>
                     </div>
                 </div>
@@ -644,27 +731,29 @@
                             <i class="fas fa-map-marker-alt me-2 text-primary"></i>
                             <strong>Office:</strong><br>
                             <span class="ms-4">Plot no: 02, Gut No- 70, Vadgaon Kolati,<br>
-                            <span class="ms-4">MIDC Waluj, Sambhajinagar - 431136</span>
+                                <span class="ms-4">MIDC Waluj, Sambhajinagar - 431136</span>
                         </p>
                     </div>
                 </div>
 
-                <!-- Map -->
                 <div class="col-md-6">
-                    <div class="card border-0 bg-dark text-light p-4" style="border-radius: 10px; box-shadow: 0 0 15px rgba(255,255,255,0.1);">
+                    <div class="card border-0 bg-dark text-light p-4"
+                        style="border-radius: 10px; box-shadow: 0 0 15px rgba(255,255,255,0.1);">
                         <h5 class="card-title mb-3">ENQUIRY FORM</h5>
-                        <form>
+                        <form id="contactForm" onsubmit="submitForm(event)">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                <input type="tel" id="contact" class="form-control" placeholder="Phone Number" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <input type="email" id="email" class="form-control" placeholder="Email Address"
+                                    required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                                <textarea id="message" class="form-control" rows="3" placeholder="Your Message"
+                                    required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary w-100">Submit</button>
                         </form>
@@ -675,12 +764,53 @@
     </footer>
 
     <!-- Add this JavaScript to your script file -->
+    <script type="text/javascript">
+        
+    </script>
     <script>
+        
+
+
         function scrollIndustries(direction) {
             const container = document.querySelector('.industry-slider .row');
             const scrollAmount = container.offsetWidth * 0.75 * direction;
             container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         }
+
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200; // The lower the faster
+
+        const startCounters = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+
+                    const updateCount = () => {
+                        const increment = target / speed;
+                        if (count < target) {
+                            count += increment;
+                            counter.innerText = Math.ceil(count);
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+
+                    updateCount();
+                    observer.unobserve(counter); // Stop observing once animation starts
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(startCounters, {
+            threshold: 0.4
+        });
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
     </script>
 
 </body>

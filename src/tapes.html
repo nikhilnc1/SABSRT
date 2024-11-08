@@ -17,13 +17,15 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <style>
     body {
         font-family: 'Arial', sans-serif;
         line-height: 1.6;
         color: #333;
+        background: linear-gradient(135deg, #1e2a3a 0%, #2c3e50 100%);
     }
 
     .about-section {
@@ -61,19 +63,26 @@
     }
 
     .card-img-top {
-        height: 150px;          /* Fixed height */
-        object-fit: contain;    /* Maintains aspect ratio */
-        padding: 10px;         /* Adds some spacing inside the card */
-        background: #99b3cd;   /* Light background for images */
+        height: 150px;
+        /* Fixed height */
+        object-fit: contain;
+        /* Maintains aspect ratio */
+        padding: 10px;
+        /* Adds some spacing inside the card */
+        background: #f8f9fa;
+        /* Light background for images */
     }
 
     .card {
-        transition: transform 0.2s;  /* Smooth hover effect */
+        transition: transform 0.2s;
+        /* Smooth hover effect */
     }
 
     .card:hover {
-        transform: translateY(-5px); /* Slight lift effect on hover */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow on hover */
+        transform: translateY(-5px);
+        /* Slight lift effect on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Subtle shadow on hover */
     }
 </style>
 
@@ -113,10 +122,12 @@
                                             <a href="./tapes.html"><span>Surface Protection Tape Embossed</span></a>
                                             <i class="fa-solid fa-chevron-right"></i>
                                             <ul class="sub-menu sub-menu-right">
-                                                <li><a href="./tapes.html"><span>surface protection tape embossed</span></a></li>
+                                                <li><a href="./tapes.html"><span>surface protection tape
+                                                            embossed</span></a></li>
                                                 <li><a href="./tapes.html"><span>surface protection tape low Track/High
                                                             Tack</span></a></li>
-                                                <li><a href="./tapes.html"><span>Coated metal protection film</span></a></li>
+                                                <li><a href="./tapes.html"><span>Coated metal protection film</span></a>
+                                                </li>
                                                 <li><a href="./tapes.html"><span>cling film</span></a></li>
                                                 <li><a href="./tapes.html"><span>static film</span></a></li>
                                                 <li><a href="./tapes.html"><span>cold LAMINATION FILM</span></a></li>
@@ -142,6 +153,7 @@
                                         </li>
                                         <li><a href="./tapes.html"><span>PVC Insulation Tapes</span></a></li>
                                         <li><a href="./tapes.html"><span>BOPP Tapes</span></a></li>
+                                        <li><a href="./tapes.html"><span>BOPP Tapes</span></a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -152,7 +164,8 @@
                                             <a href="./gaskets.html"><span>Foam Gaskets</span></a>
                                             <i class="fa-solid fa-chevron-right"></i>
                                             <ul class="sub-menu sub-menu-right">
-                                                <li><a href="./gaskets.html"><span>Close Cell EPDM Gasket</span></a></li>
+                                                <li><a href="./gaskets.html"><span>Close Cell EPDM Gasket</span></a>
+                                                </li>
                                                 <li><a href="./gaskets.html"><span>Open Cell EPDM Gasket</span></a></li>
                                                 <li><a href="./gaskets.html"><span>EVA Foam Gasket</span></a></li>
                                                 <li><a href="./gaskets.html"><span>IXPE Foam Gasket</span></a></li>
@@ -162,7 +175,8 @@
                                                 <li><a href="./gaskets.html"><span>Conductive Foam EMI, ESD Shielding
                                                             Gasket</span></a></li>
                                                 <li><a href="./gaskets.html"><span>PSP Foam Gasket</span></a></li>
-                                                <li><a href="./gaskets.html"><span>Customise EPE Profiles</span></a></li>
+                                                <li><a href="./gaskets.html"><span>Customise EPE Profiles</span></a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li><a href="./gaskets.html"><span>Cork Gasket</span></a></li>
@@ -232,13 +246,14 @@
 
     <div class="container mt-5 py-5">
         <h2 class="text-primary text-center mb-5">Our Tapes Collection</h2>
-        
+
         <!-- Surface Protection Tape Products -->
         <h3 class="text-secondary mb-4">Surface Protection Tape Products</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
                 <div class="card h-100">
-                    <img src="./assets/tapes/Surface protection tape embossed.jfif" class="card-img-top" alt="Surface Protection Tape">
+                    <img src="./assets/tapes/Surface protection tape embossed.jfif" class="card-img-top"
+                        alt="Surface Protection Tape">
                     <div class="card-body">
                         <h5 class="card-title">Surface Protection Tape Embossed</h5>
                     </div>
@@ -246,7 +261,8 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="./assets/tapes/Surface Protection film low tackhigh tac.jfif" class="card-img-top" alt="Low Track Tape">
+                    <img src="./assets/tapes/Surface Protection film low tackhigh tac.jfif" class="card-img-top"
+                        alt="Low Track Tape">
                     <div class="card-body">
                         <h5 class="card-title">Surface Protection Tape Low Track/High Tack</h5>
                     </div>
@@ -254,7 +270,8 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="./assets/tapes/Coated Metal Protection film.jfif" class="card-img-top" alt="Metal Protection Film">
+                    <img src="./assets/tapes/Coated Metal Protection film.jfif" class="card-img-top"
+                        alt="Metal Protection Film">
                     <div class="card-body">
                         <h5 class="card-title">Coated Metal Protection Film</h5>
                     </div>
@@ -323,7 +340,8 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="./assets/tapes/Coloured floor markings tapes.jfif" class="card-img-top" alt="Colored Floor Marking">
+                    <img src="./assets/tapes/Coloured floor markings tapes.jfif" class="card-img-top"
+                        alt="Colored Floor Marking">
                     <div class="card-body">
                         <h5 class="card-title">Colored Floor Marking (Yellow, Red, Green)</h5>
                     </div>
@@ -406,6 +424,14 @@
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="./assets/tapes/food-grade-pvc.jfif" class="card-img-top" alt="Food Grade PVC">
+                    <div class="card-body">
+                        <h5 class="card-title">Food Grade PVC Tapes</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -448,27 +474,27 @@
                 </div>
 
                 <!-- Contact Form Column -->
-                <div class="col-lg-6">
-                    <div class="card bg-dark text-light border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">ENQUIRY FORM</h5>
-                            <form>
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
-                                </div>
-                                <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-                                <div class="mb-3">
-                                    <textarea class="form-control" rows="3" placeholder="Your Message"
-                                        required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100">Submit</button>
-                            </form>
-                        </div>
+                <div class="col-md-6">
+                    <div class="card border-0 bg-dark text-light p-4"
+                        style="border-radius: 10px; box-shadow: 0 0 15px rgba(255,255,255,0.1);">
+                        <h5 class="card-title mb-3">ENQUIRY FORM</h5>
+                        <form id="contactForm" onsubmit="submitForm(event)">
+                            <div class="mb-3">
+                                <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" id="contact" class="form-control" placeholder="Phone Number" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" id="email" class="form-control" placeholder="Email Address"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="message" class="form-control" rows="3" placeholder="Your Message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>

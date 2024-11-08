@@ -37,19 +37,44 @@ const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".close-menu-btn");
 const closeMenuBtn = document.querySelector(".open-menu-button");
 
-[openMenuBtn, closeMenuBtn].forEach((btn)=>{
-	btn.addEventListener("click",()=>{
+[openMenuBtn, closeMenuBtn].forEach((btn) => {
+	btn.addEventListener("click", () => {
 		menu.classList.toggle("open");
 		menu.style.transition = "transform 0.5s ease";
 	});
 });
 
-menu.addEventListener("transitionend",()=>{
+menu.addEventListener("transitionend", () => {
 	this.removeAttribute("style")
 });
 
 menu.querySelectorAll(".dropdown > i").forEach((arrow) => {
-	arrow.addEventListener("click", function() {
+	arrow.addEventListener("click", function () {
 		this.closest(".dropdown").classList.toggle("active");
 	});
 });
+
+
+emailjs.init('7v1vjUL_Yeu1UryuG')
+function submitForm(event) {
+	event.preventDefault();
+
+	var name = document.getElementById("name").value;
+	var contact = document.getElementById("contact").value;
+	var email = document.getElementById("email").value;
+	var message = document.getElementById("message").value;
+
+	emailjs.send("service_rkmo3he", "template_sb9t6md", {
+		name: name,
+		email: email,
+		mobile_no: contact,
+		message: message
+	})
+		.then(function (response) {
+			alert("Your query has been registered. We will get back to you soon.");
+			document.getElementById("contactForm").reset();
+		}, function (error) {
+			alert("Error occurred while submitting the form." + error);
+			console.error("EmailJS error:", error);
+		});
+}
