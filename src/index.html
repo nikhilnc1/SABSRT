@@ -135,14 +135,14 @@
         padding: 20px;
     }
 
-    .hero-content h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+    .hero-content h1.display-4 {
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
     }
 
     .hero-content .lead {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.6;
     }
 
     @media (max-width: 768px) {
@@ -150,12 +150,18 @@
             height: 100vh;
         }
         
-        .hero-content h1 {
-            font-size: 2rem;
+        .hero-content h1.display-4 {
+            font-size: 2.5rem;
         }
         
         .hero-content .lead {
-            font-size: 1rem;
+            font-size: 1.15rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .hide-small {
+            display: none;
         }
     }
 </style>
@@ -330,10 +336,10 @@
                             <p class="lead kanit-regular mb-2" style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
                                 At SABSRT Industries, we specialize in engineered foams, tapes, masking solutions, gaskets, surface protection films, and acoustic products. Established in 2022, we are committed to delivering innovative, high-quality materials tailored to meet diverse industry needs.
                             </p>
-                            <p class="lead kanit-regular mb-3" style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
+                            <p class="lead kanit-regular mb-3 hide-small" style="line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">
                                 Our state-of-the-art facility ensures reliable, cost-effective solutions, with a focus on research, custom-engineered products, and strong partnerships. Explore our wide range of tapes, gaskets, and protection films designed to drive your success.
                             </p>
-                            <p class="lead kanit-regular mb-4 text-warning" style="font-style: italic;">
+                            <p class="lead kanit-regular mb-4 text-warning" style="font-style: italic; font-size: 1.4rem;">
                                 "Quality You Can Trust, Under One Roof."
                             </p>
                             <a href="#products" class="btn btn-warning btn-lg">Explore Products</a>
