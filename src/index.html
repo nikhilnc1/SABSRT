@@ -66,16 +66,47 @@
         padding: 0 40px;
     }
 
-    .industry-slider .row {
-        -ms-overflow-style: none;
-        /* IE and Edge */
-        scrollbar-width: none;
-        /* Firefox */
+    .industry-card .card-img-top {
+        background-color: #f8f9fa; /* Light grey background */
+        padding: 10px; /* Add some padding around the image */
+        object-fit: contain !important; /* Changed from cover to contain */
     }
 
-    .industry-slider .row::-webkit-scrollbar {
-        display: none;
-        /* Chrome, Safari and Opera */
+    .industry-slider .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .industry-card {
+        flex: 0 0 calc(20% - 20px);
+        max-width: calc(20% - 20px);
+        margin-bottom: 20px;
+    }
+
+    /* Tablet view */
+    @media (max-width: 992px) {
+        .industry-card {
+            flex: 0 0 calc(33.333% - 20px);  /* 3 items per row */
+            max-width: calc(33.333% - 20px);
+        }
+    }
+
+    /* Mobile view */
+    @media (max-width: 768px) {
+        .industry-card {
+            flex: 0 0 calc(50% - 20px);  /* 2 items per row */
+            max-width: calc(50% - 20px);
+        }
+    }
+
+    /* Small mobile view */
+    @media (max-width: 480px) {
+        .industry-card {
+            flex: 0 0 100%;  /* 1 item per row */
+            max-width: 100%;
+        }
     }
 
     .card:hover {
@@ -456,121 +487,137 @@
     <div class="container mt-5 mb-5">
         <h2 class="text-center mb-4 kanit-bold">INDUSTRIES WE SERVE</h2>
 
-        <div class="position-relative">
-            <div class="industry-slider">
-                <div class="row flex-nowrap overflow-auto pb-3" style="scroll-behavior: smooth;">
-                    <!-- Automotive -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+        <div class="industry-slider">
+            <div class="row">
+                <!-- Automotive -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/automotive.jpg" class="card-img-top"
-                                alt="Automotive Industry" style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-danger text-white">
-                                <h5 class="card-title mb-0 kanit-medium">AUTOMOTIVE INDUSTRY</h5>
-                            </div>
+                                alt="Automotive Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-danger text-white">
+                            <h5 class="card-title mb-0 kanit-medium">AUTOMOTIVE INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Electrical -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                <!-- Electrical -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/electrical.jpg" class="card-img-top"
-                                alt="Electrical Industry" style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-secondary text-white">
-                                <h5 class="card-title mb-0 kanit-medium">ELECTRIC/ELECTRICAL INDUSTRY</h5>
-                            </div>
+                                alt="Electrical Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h5 class="card-title mb-0 kanit-medium">ELECTRIC/ELECTRICAL INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- HVAC -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="./assets/industryweserve/hvac.jpg" class="card-img-top" alt="HVAC Industry"
-                                style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-danger text-white">
-                                <h5 class="card-title mb-0 kanit-medium">HVAC INDUSTRY</h5>
-                            </div>
+                <!-- HVAC -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/hvac.jpg" class="card-img-top"
+                                alt="HVAC Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-danger text-white">
+                            <h5 class="card-title mb-0 kanit-medium">HVAC INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Label -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="./assets/industryweserve/label.jpg" class="card-img-top" alt="Label Industry"
-                                style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-secondary text-white">
-                                <h5 class="card-title mb-0 kanit-medium">LABEL INDUSTRY</h5>
-                            </div>
+                <!-- Label -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/label.jpg" class="card-img-top"
+                                alt="Label Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h5 class="card-title mb-0 kanit-medium">LABEL INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Packaging -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                <!-- Packaging -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/packaging.jpg" class="card-img-top"
-                                alt="Packaging Industry" style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-danger text-white">
-                                <h5 class="card-title mb-0 kanit-medium">PACKAGING INDUSTRY</h5>
-                            </div>
+                                alt="Packaging Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-danger text-white">
+                            <h5 class="card-title mb-0 kanit-medium">PACKAGING INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Paper Mills -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                <!-- Paper Mills -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/paper.jpg" class="card-img-top"
-                                alt="Paper Mills Industry" style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-secondary text-white">
-                                <h5 class="card-title mb-0 kanit-medium">PAPER MILLS INDUSTRY</h5>
-                            </div>
+                                alt="Paper Mills Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h5 class="card-title mb-0 kanit-medium">PAPER MILLS INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Signage -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="./assets/industryweserve/signage.jpg" class="card-img-top" alt="Signage Industry"
-                                style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-danger text-white">
-                                <h5 class="card-title mb-0 kanit-medium">SIGNAGE INDUSTRY</h5>
-                            </div>
+                <!-- Signage -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="./assets/industryweserve/signage.jpg" class="card-img-top"
+                                alt="Signage Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-danger text-white">
+                            <h5 class="card-title mb-0 kanit-medium">SIGNAGE INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Surface Protection -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                <!-- Surface Protection -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/surface.jpg" class="card-img-top"
-                                alt="Surface Protection Industry" style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-secondary text-white">
-                                <h5 class="card-title mb-0 kanit-medium">SURFACE PROTECTION INDUSTRY</h5>
-                            </div>
+                                alt="Surface Protection Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h5 class="card-title mb-0 kanit-medium">SURFACE PROTECTION INDUSTRY</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Wire Harness -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                <!-- Wire Harness -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/wireharness.jpg" class="card-img-top"
-                                alt="Wire Harness Industry" style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-danger text-white">
-                                <h5 class="card-title mb-0 kanit-medium">WIREHARNESS INDUSTRY</h5>
-                            </div>
+                                alt="Wire Harness Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-danger text-white">
+                            <h5 class="card-title mb-0 kanit-medium">WIREHARNESS INDUSTRY</h5>
                         </div>
                     </div>
-                    <!-- White Goods -->
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                </div>
+                <!-- White Goods -->
+                <div class="industry-card">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div style="background-color: #f8f9fa; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="./assets/industryweserve/goods.jpg" class="card-img-top"
-                                alt="White Goods Industry" style="height: 200px; object-fit: cover;">
-                            <div class="card-body text-center bg-secondary text-white">
-                                <h5 class="card-title mb-0 kanit-medium">WHITE GOODS INDUSTRY</h5>
-                            </div>
+                                alt="White Goods Industry" style="height: 180px; object-fit: contain;">
+                        </div>
+                        <div class="card-body text-center bg-secondary text-white">
+                            <h5 class="card-title mb-0 kanit-medium">WHITE GOODS INDUSTRY</h5>
                         </div>
                     </div>
                 </div>
             </div>
-
-          
         </div>
     </div>
 
